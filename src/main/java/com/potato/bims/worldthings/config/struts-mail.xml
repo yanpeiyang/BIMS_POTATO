@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC   
+	"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"      
+	"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="mail" extends="struts-base" namespace="/mail">
+		<action name="*" class="com.potato.bims.mail.action.MailAction" method="{1}">
+			<result name="mailDetail">/WEB-INF/pages/mail/mailDetail.jsp</result>
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC   
+	"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"      
+	"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="book" extends="struts-base" namespace="/book">
+		<action name="*" class="com.potato.bims.book.action.BookAction" method="{1}">
+			<result name="bookList">/pages/book/bookList.jsp</result>
+			<result name="bookEdit">/pages/book/bookEdit.jsp</result>
+			<result name="borrowRead">/pages/book/borrowRead.jsp</result>
+			<result name="returnBook">/pages/book/returnBook.jsp</result>
+			<result name="bookranklist">/pages/book/bookRanklist.jsp</result>
+		</action>
+	</package>
+</struts>
